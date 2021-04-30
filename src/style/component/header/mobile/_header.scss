@@ -1,0 +1,99 @@
+.modalMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modalMobileMain {
+  position: fixed;
+  background: #ffffff;
+  width: 75%;
+  height: 100%;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  padding: 10px;
+  overflow-y: auto;
+  .searchContainerMobile {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+    input {
+      width: 80%;
+      height: 100%;
+      border: none;
+      outline: none;
+      padding-left: 18px;
+      background: transparent;
+    }
+    button {
+      width: 20%;
+      height: 100%;
+      border: none;
+      outline: none;
+      background-color: #293462;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  .navContainerMobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .modalMobileMain {
+    .navContainerMobile {
+      display: block;
+      width: 100%;
+      height: 100%;
+      .link {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #eeeeee;
+        cursor: pointer;
+        .navLogo {
+          display: flex;
+          flex-direction: row;
+          div {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .arrowContainer {
+          width: 15px;
+          height: 15px;
+          display: none;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        h4 {
+          font-size: 16px;
+          color: #293462;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

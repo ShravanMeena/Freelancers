@@ -1,0 +1,20 @@
+export const USER_INFO = "USER_INFO";
+export const LOG_OUT = "LOG_OUT";
+export const ALL_JOB = "ALL_JOB";
+export const SINGLE_JOB = "SINGLE_JOB";
+export const JOB_TYPE = "JOB_TYPE";
+export const SESSION_ACTIVE = "SESSION_ACTIVE";
+export const SESSION_UPDATE = "SESSION_UPDATE";
+export const CREATE_JOB = "CREATE_JOB";
+export const GET_JOB_PROFILE = "GET_JOB_PROFILE";
+
+export const SINGLE_JOB_PROFILE = "SINGLE_JOB_PROFILE";
+export const SINGLE_PERMANENT_PROFILE = "SINGLE_PERMANENT_PROFILE";
+export const SINGLE_FREELANCER_PROFILE = "SINGLE_FREELANCER_PROFILE";
+
+export const ADD_EXPERIENCE = "ADD_EXPERIENCE";
+export const ADD_EDUCATION = "ADD_EDUCATION";
+export const ADD_SKILLS = "ADD_SKILLS";
+export const ADD_SPECIFICATIONS = "ADD_SPECIFICATIONS";
+
+export const LOADER = "LOADER";

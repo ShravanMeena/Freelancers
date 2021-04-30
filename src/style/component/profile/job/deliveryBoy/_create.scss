@@ -1,0 +1,86 @@
+.mainCreateContainer {
+  width: 100%;
+  height: 100%;
+  .createContainer {
+    width: 100%;
+    height: 100%;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .bioHeader {
+      width: 70%;
+      h4 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #293462;
+        text-align: center;
+      }
+    }
+    .innerjobTypeContainer {
+      width: 70%;
+      min-height: 80vh;
+      border: 1px solid #eeeeee;
+      padding: 30px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .bioFieldContainer {
+        width: 100%;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        h4 {
+          font-size: 16px;
+          color: #293462;
+          font-weight: 600;
+        }
+        textarea {
+          width: 100%;
+          height: 20vh;
+          padding: 10px;
+          border: 1px solid #29346275;
+        }
+      }
+      .buttonContainer {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        button {
+          width: 120px;
+          height: 35px;
+          color: #ffffff;
+          background-color: #293462;
+          border: none;
+          outline: none;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainCreateContainer {
+    .createContainer {
+      .bioHeader {
+        width: 90%;
+      }
+      .innerjobTypeContainer {
+        width: 90%;
+        padding: 30px 20px;
+        border: 1px solid #293462;
+        border-radius: 2px;
+        .bioFieldContainer {
+          textarea {
+            border: 1px solid #29346241;
+          }
+        }
+      }
+    }
+  }
+}

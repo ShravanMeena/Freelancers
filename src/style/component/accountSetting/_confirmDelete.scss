@@ -1,0 +1,52 @@
+.confirmDeleteModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.confirmDeleteModalMain {
+  position: fixed;
+  background: #ffffff;
+  width: 20%;
+  height: 15%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  padding: 20px;
+  h4 {
+    font-size: 18px;
+    color: #293462;
+    font-weight: 600;
+    height: 60%;
+  }
+  .btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40%;
+
+    button {
+      border: 1px solid #293462;
+      background: transparent;
+      outline: none;
+      width: 48%;
+      height: 35px;
+    }
+    .deleteBtn {
+      background-color: #293462;
+      color: #ffffff;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .confirmDeleteModalMain {
+    width: 90%;
+    height: 80%;
+  }
+}

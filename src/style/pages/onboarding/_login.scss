@@ -1,0 +1,155 @@
+.loginFormMainContainer {
+  background: url("../../../assets/header-background.jpg") no-repeat center
+    center fixed;
+  width: 100%;
+  min-height: 100vh;
+  .loginContainer {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 6vh;
+    .leftLoginContainer {
+      min-height: 94vh;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .innerLeftLoginConatiner {
+        width: 70%;
+        min-height: 70%;
+        padding: 20px;
+        h2 {
+          text-align: center;
+          font-size: 35px;
+          color: #293462;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        .fieldConatiner {
+          width: 100%;
+          min-height: 40vh;
+          .singleFieldContainer {
+            width: 100%;
+            min-height: 8vh;
+            margin-bottom: 5px;
+            h4 {
+              text-align: left;
+              font-size: 16px;
+              color: #293462;
+              font-weight: 500;
+            }
+            input {
+              background: transparent;
+              outline: none;
+              min-height: 40px;
+              width: 100%;
+              border: 1px solid #29346241;
+              padding-left: 10px;
+              font-size: 13px;
+            }
+            button {
+              width: 100%;
+              min-height: 40px;
+              background-color: #293462;
+              border: none;
+              outline: none;
+              color: #ffffff;
+              font-size: 18px;
+            }
+          }
+          .singleForgotFieldContainer {
+            width: 100%;
+            min-height: 4vh;
+            h4 {
+              cursor: pointer;
+              text-align: right;
+              font-size: 14px;
+              color: #ea4c89;
+              font-weight: 500;
+            }
+          }
+          .singleRegisterFieldContainer {
+            width: 100%;
+            min-height: 10vh;
+            border-top: 1px solid #eeeeee;
+            padding-top: 2vh;
+            h4 {
+              text-align: center;
+              font-size: 14px;
+              color: #293462;
+              font-weight: 500;
+              span {
+                cursor: pointer;
+                color: #ea4c89;
+              }
+            }
+            .innerRightHeaderContainer {
+            }
+          }
+        }
+      }
+    }
+    .rightLoginContainer {
+      min-height: 94vh;
+      width: 50%;
+
+      padding: 20px;
+      // border-left: 1px solid rgb(234, 238, 250);
+      .innerRightBodyContainer {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .imgContainer {
+          width: 70vh;
+          align-items: center;
+          height: 70vh;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        h4 {
+          margin-top: 5vh;
+          text-align: center;
+          font-size: 24px;
+          color: #293462;
+          font-weight: 500;
+
+          span {
+            color: #ea4c89;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .loginFormMainContainer {
+    background: #ffffff;
+
+    .loginContainer {
+      flex-direction: column;
+      .leftLoginContainer {
+        width: 100%;
+        .innerLeftLoginConatiner {
+          width: 100%;
+          min-height: 70%;
+          .fieldConatiner {
+            width: 100%;
+            min-height: 40vh;
+          }
+        }
+      }
+      .rightLoginContainer {
+        display: none;
+      }
+    }
+  }
+}

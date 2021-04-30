@@ -1,0 +1,157 @@
+.mainCreateProfileContainer {
+  width: 100%;
+  height: 100%;
+  .createProfileContainer {
+    width: 100%;
+    height: 100%;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .create {
+      width: 70%;
+      height: 30px;
+      h4 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #293462;
+        text-align: center;
+      }
+    }
+    .innerCreateProfileContainer {
+      width: 70%;
+      height: 100%;
+      border: 1px solid #92929250;
+      padding: 30px 80px;
+
+      .emptyField {
+        border: 1px solid red !important;
+      }
+
+      .fillField {
+        border: 1px solid #92929250 !important;
+      }
+
+      .createFieldContainer {
+        width: 100%;
+        min-height: 10vh;
+        h4 {
+          font-size: 16px;
+          color: #293462;
+          font-weight: 400;
+        }
+        input {
+          width: 100%;
+          height: 5vh;
+          padding-left: 10px;
+          border: 1px solid #92929250;
+          transition: 0.2s ease-in-out;
+          &:hover,
+          &:focus,
+          &:active {
+            border: 1px solid #293462;
+          }
+        }
+        textarea {
+          width: 100%;
+          height: 16vh;
+          padding-left: 10px;
+          border: 1px solid #eeeeee;
+          transition: 0.2s ease-in-out;
+          margin-bottom: 20px;
+          &:hover,
+          &:focus,
+          &:active {
+            border: 1px solid #293462;
+          }
+        }
+      }
+      .doubleInputField {
+        width: 100%;
+        min-height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        .createFieldContainer {
+          width: 49%;
+        }
+      }
+
+      .createButtonContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        button {
+          width: 120px;
+          height: 35px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+          border-radius: 2px;
+          background-color: #293462;
+        }
+        .saveChanges {
+          background-color: #293462;
+        }
+        .discardChanges {
+          background-color: transparent;
+          color: red;
+          border: 1px solid red;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainCreateProfileContainer {
+    .createProfileContainer {
+      .innerCreateProfileContainer {
+        width: 95%;
+        padding: 20px;
+        border: 1px solid #293462;
+        border-radius: 2px;
+
+        .createFieldContainer {
+          h4 {
+            font-size: 14px;
+          }
+          input {
+            height: 35px;
+            border: 1px solid #2934624f;
+            border-radius: 2px;
+          }
+        }
+        .doubleInputField {
+          width: 100%;
+          min-height: 20vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .createFieldContainer {
+            width: 100%;
+          }
+        }
+
+        .createButtonContainer {
+          button {
+            width: 100px;
+            height: 30px;
+          }
+          .saveChanges {
+            background-color: #293462;
+          }
+          .discardChanges {
+            background-color: transparent;
+            color: red;
+            border: 1px solid red;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

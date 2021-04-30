@@ -1,0 +1,86 @@
+.singleAccountSetting h4 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #293462;
+}
+.accountSettingTilte {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #293462;
+  margin-bottom: 40px;
+}
+.singleAccountSettingBottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  height: 30px;
+  margin-bottom: -10px;
+}
+.singleAccountSettingBottom input {
+  height: 30px;
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding-left: 5px;
+}
+.singleAccountSettingBottom img {
+  width: 20px;
+  height: 20px;
+}
+
+.singleAccountSetting {
+  width: 100%;
+}
+.singleAccountSetting .borderBottom {
+  width: 40%;
+}
+
+.singleAccountSettingBottom h6 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #293462;
+}
+
+.updateBtnContainer {
+  width: 100%;
+}
+
+.updateBtnContainer button {
+  height: 40px;
+  width: 40%;
+  background: #293462;
+  border: 1px solid #293462;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+/* for businesss type disabled btn */
+
+@media only screen and (max-width: 768px) {
+  .singleAccountSettingBottom {
+    width: 100%;
+  }
+
+  .singleAccountSetting .borderBottom {
+    width: 100%;
+  }
+
+  .updateBtnContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .updateBtnContainer button {
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}

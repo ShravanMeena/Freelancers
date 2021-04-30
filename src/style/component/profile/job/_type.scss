@@ -1,0 +1,100 @@
+.mainJobTypeContainer {
+  width: 100%;
+  height: 100%;
+  .jobTypeContainer {
+    width: 100%;
+    height: 100%;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .type {
+      width: 70%;
+      height: 30px;
+      h4 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #293462;
+        text-align: center;
+      }
+    }
+    .innerjobTypeContainer {
+      width: 70%;
+      min-height: 80vh;
+      border: 1px solid #eeeeee;
+      padding: 30px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .typesContainer {
+        width: 50%;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .singleTypesContainer {
+          width: 100%;
+          height: 5vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #eeeeee;
+          cursor: pointer;
+          margin-bottom: 2vh;
+          h4 {
+            font-size: 16px;
+            color: #293462;
+            font-weight: 600;
+          }
+          &:hover,
+          &:focus,
+          &:active,
+          &:target {
+            background-color: #293462;
+
+            h4 {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .jobTypeButtonContainer {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        button {
+          width: 120px;
+          height: 35px;
+          color: #ffffff;
+          background-color: #293462;
+          border: none;
+          outline: none;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainJobTypeContainer {
+    .jobTypeContainer {
+      margin-bottom: 20px;
+      .innerjobTypeContainer {
+        border: 1px solid #293462;
+        width: 90%;
+        padding: 30px 20px;
+        .typesContainer {
+          width: 100%;
+          .singleTypesContainer {
+            height: 35px;
+            border: 1px solid #2934623d;
+          }
+        }
+      }
+    }
+  }
+}

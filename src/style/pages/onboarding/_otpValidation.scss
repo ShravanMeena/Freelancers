@@ -1,0 +1,117 @@
+.verifyOtpMainConatiner {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../../assets/header-hero.jpg") no-repeat center center
+    fixed;
+  .verifyOtpConatiner {
+    width: 100%;
+    padding-top: 6vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .verifyContainer {
+      min-width: 450px;
+      border: 1px solid #afb3c34d;
+      height: 90vh;
+      border-radius: 3px;
+      padding: 20px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.07);
+
+      .imgContainer {
+        width: 70px;
+        height: 70px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .headerVerifyContainer {
+        width: 70%;
+
+        h4 {
+          font-size: 24px;
+          color: #293462;
+          font-weight: 600;
+          margin: 40px 0px 0px 0px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          color: #afb3c3;
+          font-size: 16px;
+          font-weight: 500;
+          margin: 0px 0px 120px 0px;
+          span {
+            color: #b7b3b3;
+            font-weight: 600;
+          }
+        }
+      }
+      .bottomContainer {
+        width: 70%;
+        input {
+          width: 100%;
+          height: 35px;
+          outline: none;
+          border: 1px solid #afb3c3;
+          border-radius: 2px;
+          padding-left: 10px;
+        }
+        button {
+          width: 100%;
+          height: 35px;
+          background-color: #293462;
+          color: #ffffff;
+          outline: none;
+          border: none;
+          border-radius: 2px;
+          margin-top: 20px;
+        }
+        h6 {
+          width: 100%;
+          color: #afb3c3;
+          font-size: 12px;
+          font-weight: 500;
+          margin: 10px 0px 40px 0px;
+          span {
+            color: #ea4c89;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .verifyOtpMainConatiner {
+    .verifyOtpConatiner {
+      .verifyContainer {
+        min-width: 94%;
+        padding: 0px;
+
+        .headerVerifyContainer {
+          width: 90%;
+
+          h4 {
+            font-size: 26px;
+          }
+          p {
+            font-size: 14px;
+            margin: 0px 0px 80px 0px;
+          }
+        }
+        .bottomContainer {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
