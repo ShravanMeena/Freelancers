@@ -1,4 +1,4 @@
-### Watch short youtube for save time
+### Watch short youtube video for save time
 
 # [Click here](https://bit.ly/3fwfGsI)
 
